@@ -1,12 +1,12 @@
-## Expense Tracker
+## Plan to do improved SplitWise
 
-Keep track of income and expenses. Add and remove items and save to local storage
+Keeping track of spending and costs
 
-## Project Specifications
+## Description
 
-- Create UI for project
-- Display transaction items in DOM
-- Show balance, expense and income totals
-- Add new transation and reflect in total
-- Delete items from DOM
-- Persist to local storage
+- Created UI
+- Displayed transaction items 
+- Show expenses, income, balance
+- Adding new transations
+- Delete items from dom
+- Local storage
