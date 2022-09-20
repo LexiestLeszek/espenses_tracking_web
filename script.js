@@ -1,4 +1,4 @@
-const balance = document.getElementById('balance');
+const currentBalance = document.getElementById('currentBalance');
 const money_plus = document.getElementById('money-plus');
 const money_minus = document.getElementById('money-minus');
 const list = document.getElementById('list');
@@ -34,13 +34,9 @@ function addTransaction(e) {
     };
 
     transactions.push(transaction);
-
     addTransactionDOM(transaction);
-
     updateValues();
-
     updateLocalStorage();
-
     text.value = '';
     amount.value = '';
   }
@@ -72,7 +68,7 @@ function addTransactionDOM(transaction) {
   list.appendChild(item);
 }
 
-// Update the balance, income and expense
+// Update the currentBalance, income and expense
 function updateValues() {
   const amounts = transactions.map(transaction => transaction.amount);
 
@@ -88,7 +84,7 @@ function updateValues() {
     -1
   ).toFixed(2);
 
-  balance.innerText = `$${total}`;
+  currentBalance.innerText = `$${total}`;
   money_plus.innerText = `$${income}`;
   money_minus.innerText = `$${expense}`;
 }
